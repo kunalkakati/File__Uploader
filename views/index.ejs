@@ -1,0 +1,11 @@
+<%- include("components/header"); -%>
+    <a href="/find">Find person</a>
+    <form action="/" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <div class="form-1">
+            <input type="text" name="fname" placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+            <input type="text" name="lname" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+            <input type="file" name="image" class="file">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+<%- include("components/footer"); -%>

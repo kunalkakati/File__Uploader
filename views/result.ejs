@@ -1,0 +1,18 @@
+<%- include("components/header"); -%>
+<a href="/">Back</a>
+<div class="form-1">
+    <form action="/find" method="POST">
+        <input type="text" name="fname" placeholder="Enter first name to find person" onfocus="this.placeholder=''" onblur="this.placeholder='Enter first name to find person'">
+        <input type="submit" Value="Find">
+    </form>
+</div>
+<div class="profile-box">
+    <img src= <%= IMG %> >
+    <h1><%= FN %> <%= LN %> </h1>
+</div>
+<form action="/delete" method="POST">
+    <input type="hidden" name="delete" value=<%= ID %>>
+    <input type="hidden" name="Path" value=<%= IMG %> >
+    <button class="btn-delete" type="submit">Delete</button>
+</form>
+<%- include("components/footer"); -%>
