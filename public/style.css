@@ -6,7 +6,7 @@
 
 body{
     padding: 7% 14%;
-    background-color: wheat;
+    background-color: #F6F6F6;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .form-1 input[type="text"]{
     width: 300px;
-    height: 30px;
+    height: 40px;
     text-align: center;
     margin: 10px;
     border-radius: 5px;
@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .form-1 input[type="text"]:focus{
-    border-color: goldenrod;
+    border-color: #8E2657;
     color: black;
     transition: .3s ease-in-out;
 }
@@ -67,9 +67,8 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .form-1 input[type="submit"],.btn-delete{
-    width: 80px;
-    height: 30px;
-    background-color: goldenrod;
+    padding: 10px 20px;
+    background-color: #8E2657;
     border: 2px solid rgb(219, 208, 208);
     border-radius: 5px;
     color: white;
@@ -79,35 +78,51 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .form-1 input[type="submit"]:hover{
-    background-color: gold;
+    background-color: #512D6D;
 }
 
 /* show.html.......... */
 
+.resl{
+    width: 100%;
+    position: relative;
+    height: 60vh;
+    
+}
+
 .profile-box{
     width: 30vw;
-    /* height: 20vw; */
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
-    margin-left: 322px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* margin-top: 70px; */
+    /* margin-left: 322px; */
 }
 
 .profile-box img{
-    width: 200px;
+    width: 400px;
     margin-bottom: 20px;
     border-radius: 6px;
 }
 
 .profile-box h1{
     font-size: 3.1rem;
+    padding: 10px;
 }
 
 .btn-delete{
-   margin: 20px 517px;
+   /* margin: 20px 517px; */
+   margin-top: 40px;
+
 
 }
 

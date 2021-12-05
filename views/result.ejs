@@ -6,13 +6,15 @@
         <input type="submit" Value="Find">
     </form>
 </div>
+<div class="resl">
 <div class="profile-box">
     <img src= <%= IMG %> >
     <h1><%= FN %> <%= LN %> </h1>
+    <form action="/delete" method="POST">
+        <input type="hidden" name="delete" value=<%= ID %>>
+        <input type="hidden" name="Path" value=<%= IMG %> >
+        <button class="btn-delete" type="submit">Delete</button>
+    </form>
 </div>
-<form action="/delete" method="POST">
-    <input type="hidden" name="delete" value=<%= ID %>>
-    <input type="hidden" name="Path" value=<%= IMG %> >
-    <button class="btn-delete" type="submit">Delete</button>
-</form>
+</div>
 <%- include("components/footer"); -%>
